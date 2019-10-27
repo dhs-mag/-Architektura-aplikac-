@@ -3,12 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
         xmlns:local="clr-namespace:Frontend"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="511.925">
     <Grid>
         <GroupBox Header="Game status" HorizontalAlignment="Left" Height="238" Margin="10,10,0,0" VerticalAlignment="Top" Width="484">
-            <TextBlock HorizontalAlignment="Left" Margin="10,10,-2,0" TextWrapping="Wrap" Text="{Binding CurrentStatus, Mode=OneWay}" VerticalAlignment="Top" Height="201" Width="464"/>
+            <emoji:TextBlock HorizontalAlignment="Left" Margin="10,10,-2,0" TextWrapping="Wrap" Text="{Binding CurrentStatus, Mode=OneWay}" VerticalAlignment="Top" Height="201" Width="464" FontSize="16"/>
         </GroupBox>
         <GroupBox Header="Rooms around you" HorizontalAlignment="Left" Height="156" Margin="10,253,0,0" VerticalAlignment="Top" Width="484">
             <ListBox ItemsSource="{Binding AdjacentRooms}" HorizontalContentAlignment="Stretch" Height="118" Margin="10,10,6,0" VerticalAlignment="Top" SelectedItem="{Binding SelectedRoom}" ButtonBase.Click="RoomGoButton_Click">
@@ -19,7 +20,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="100" />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Name}" />
+                            <emoji:TextBlock Text="{Binding Name}" />
                             <Button Grid.Column="1" Content="Go" >
                                 <!-- For button binding and selection enforcement see: https://stackoverflow.com/a/24045982 -->
                                 <Button.Style>
