@@ -16,7 +16,7 @@ namespace Frontend.ViewModels
             private set { _currentStatus = value; OnPropertyChanged(); }
         }
 
-        public ObservableCollection<Room> AdjacentRooms { get; private set; }
+        public ObservableCollection<Room> AdjacentRooms { get; }
 
         public MainWindowVm(GameEngine gameEngine)
         {
@@ -26,7 +26,7 @@ namespace Frontend.ViewModels
 
         public void UpdateFromGameEngine(GameEngine gameEngine)
         {
-            CurrentStatus = gameEngine.StateDescription;
+            CurrentStatus = gameEngine.GetStateDescription(false);
             AdjacentRooms.Clear();
             foreach (var room in gameEngine.AdjacentRooms)
             {
@@ -34,6 +34,8 @@ namespace Frontend.ViewModels
             }
         }
 
+        // interface implementation
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

@@ -1,4 +1,5 @@
-﻿using Data;
+﻿using System.Collections.Concurrent;
+using Data;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -15,12 +16,10 @@ namespace Engine
         /// </summary>
         public List<Room> AdjacentRooms => CurrentRoom.RoomsAround;
 
-        public string StateDescription => GetStateDescription();
-
     public void GameInit()
         {
-            Room forest = new Room() { Name = "Forest", Description = "You are in a Forest! You know nothing about the Forest John!" };
-            Room chamber = new Room() { Name = "Chamber", Description = "You are in a black chamber!" };
+            Room forest = new Room() { Name = "Forest", Description = "You are in a Forest! You know nothing about the Forest John! \nChoose your path." };
+            Room chamber = new Room() { Name = "Chamber", Description = "You are in a black chamber!\nYou are better off returning back to the forest I guess..." };
             
             chamber.RoomsAround.Add(forest);
             forest.RoomsAround.Add(chamber);
@@ -45,10 +44,14 @@ namespace Engine
         /// Generate textual description of the current game state.
         /// </summary>
         /// <returns></returns>
-        public string GetStateDescription()
+        public string GetStateDescription(bool includeLocationHints = true)
         {
             var sb = new StringBuilder();
             sb.AppendLine(CurrentRoom.Description);
+
+            if (!includeLocationHints)
+                return sb.ToString();
+            
             sb.AppendLine("\nAround you are:");
             if (AdjacentRooms.Any())
             {
@@ -57,8 +60,6 @@ namespace Engine
                     var room = AdjacentRooms[index];
                     sb.AppendLine($"{index + 1}) {room.Name}");
                 }
-
-                sb.AppendLine("\nChoose your path.");
             }
             else
             {
