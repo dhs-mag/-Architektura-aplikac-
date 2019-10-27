@@ -1,0 +1,53 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Drml\\Data\\JCU\\Studinjní materiály\\Mgr. Semestr 3\\Architektura aplikací\\Repo\\KingsQuest\\Game\\Game.csproj",
+    "projectName": "Game",
+    "projectPath": "C:\\Users\\Drml\\Data\\JCU\\Studinjní materiály\\Mgr. Semestr 3\\Architektura aplikací\\Repo\\KingsQuest\\Game\\Game.csproj",
+    "outputPath": "C:\\Users\\Drml\\Data\\JCU\\Studinjní materiály\\Mgr. Semestr 3\\Architektura aplikací\\Repo\\KingsQuest\\Game\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "http://packages.nuget.org/v1/FeedService.svc/": {},
+      "https://api.nuget.org/v3/index.json": {},
+      "https://uai-jcu.pkgs.visualstudio.com/_packaging/UaiToolkit/nuget/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "C:\\Users\\Drml\\Data\\JCU\\Studinjní materiály\\Mgr. Semestr 3\\Architektura aplikací\\Repo\\KingsQuest\\Engine\\Engine.csproj": {
+            "projectPath": "C:\\Users\\Drml\\Data\\JCU\\Studinjní materiály\\Mgr. Semestr 3\\Architektura aplikací\\Repo\\KingsQuest\\Engine\\Engine.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
