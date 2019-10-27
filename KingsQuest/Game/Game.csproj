@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_UnmanagedRegistrationCache Remove="obj\Game.csproj.UnmanagedRegistration.cache" />
+    <_UnmanagedRegistrationCache Remove="obj\Game.csproj.UnmanagedRegistration.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.2\Game.csproj.ResolveComReference.cache" />
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.2\Game.csproj.ResolveComReference.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp2.2\Game.dll" />
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp2.2\Game.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.2\Game.pdb" />
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.2\Game.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.2\Game.dll" />
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.2\Game.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationManifest Remove="obj\Debug\netcoreapp2.2\Game.dll.manifest" />
+    <ApplicationManifest Remove="obj\Debug\netcoreapp2.2\Game.dll.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DeployManifest Remove="obj\Debug\netcoreapp2.2\Game.application" />
+    <DeployManifest Remove="obj\Debug\netcoreapp2.2\Game.application" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_UnmanagedRegistrationCache Remove="obj\Data.csproj.UnmanagedRegistration.cache" />
+    <_UnmanagedRegistrationCache Remove="obj\Data.csproj.UnmanagedRegistration.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.2\Data.csproj.ResolveComReference.cache" />
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.2\Data.csproj.ResolveComReference.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp2.2\Data.dll" />
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp2.2\Data.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.2\Data.pdb" />
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.2\Data.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.2\Data.dll" />
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.2\Data.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationManifest Remove="obj\Debug\netcoreapp2.2\Native.Data.manifest" />
+    <ApplicationManifest Remove="obj\Debug\netcoreapp2.2\Native.Data.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DeployManifest Remove="obj\Debug\netcoreapp2.2\Data.application" />
+    <DeployManifest Remove="obj\Debug\netcoreapp2.2\Data.application" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_basics.Windows.ElementBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_basics.Windows"
+        mc:Ignorable="d"
+        Title="ElementBinding" Height="240.517" Width="375">
+    
+    <Window.Resources>
+        <RoutedUICommand x:Key="Commands.Close"></RoutedUICommand>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource Commands.Close}" Executed="Close_Command" CanExecute="Close_Command_CanEx"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding  Key="ESC" Command="{StaticResource Commands.Close}"></KeyBinding>
+    </Window.InputBindings>
+    
+    <Grid>
+        <StackPanel Margin="10,10,10,0" Height="52" VerticalAlignment="Top">
+            <TextBox Name="MyTextBox" />
+            <WrapPanel Margin="0,10">
+                <TextBlock Text="Value: " FontWeight="Bold" />
+                <TextBlock Text="{Binding Path=Text, ElementName=MyTextBox}" />
+            </WrapPanel>
+        </StackPanel>
+
+        <WrapPanel Margin="10,80,10,0" Height="30" VerticalAlignment="Top">
+            <TextBlock Text="Window dimensions: " />
+            <TextBox Text="{Binding Width, UpdateSourceTrigger=PropertyChanged}" Width="50" />
+            <TextBlock Text=" x " />
+            <TextBox Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Width="50" />
+        </WrapPanel>
+
+        <Button Content="Close" Command="{StaticResource Commands.Close}" HorizontalAlignment="Right" Margin="0,0,10,10" Width="130" Height="20" VerticalAlignment="Bottom"/>
+    </Grid>
+    
+</Window>

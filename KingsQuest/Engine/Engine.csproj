@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_UnmanagedRegistrationCache Remove="obj\Engine.csproj.UnmanagedRegistration.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.2\Engine.csproj.ResolveComReference.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp2.2\Engine.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.2\Engine.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.2\Engine.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationManifest Remove="obj\Debug\netcoreapp2.2\Native.Engine.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DeployManifest Remove="obj\Debug\netcoreapp2.2\Engine.application" />
+  </ItemGroup>
+
+</Project>
