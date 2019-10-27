@@ -12,11 +12,11 @@ namespace Data
         /// <summary>
         /// Paths
         /// </summary>
-        public List<Room> NRooms { get; set; }
+        public List<Room> RoomsAround { get; set; }
 
         public Room()
         {
-            NRooms = new List<Room>();
+            RoomsAround = new List<Room>();
         }
     }
 }
