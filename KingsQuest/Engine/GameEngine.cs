@@ -14,7 +14,9 @@ namespace Engine
         /// </summary>
         public List<Room> AdjacentRooms => CurrentRoom.RoomsAround;
 
-        public void GameInit()
+        public string StateDescription => GetStateDescription();
+
+    public void GameInit()
         {
             Room forest = new Room() { Name = "Forest", Description = "You are in a Forest! You know nothing about the Forest John!" };
             Room chamber = new Room() { Name = "Chamber", Description = "You are in a black chamber!" };

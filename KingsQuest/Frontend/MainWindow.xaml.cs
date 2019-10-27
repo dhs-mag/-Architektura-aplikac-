@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Engine;
 
 namespace Frontend
 {
@@ -20,9 +21,19 @@ namespace Frontend
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private readonly GameEngine GameEngine;
+
         public MainWindow()
         {
+            this.GameEngine = new GameEngine();
+
+            DataContext = GameEngine;
+            GameEngine.GameInit();
+            
             InitializeComponent();
         }
+        
+        
     }
 }

@@ -13,7 +13,7 @@
         <e p="Data.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp2.2" t="Include">
+            <e p="netstandard2.0" t="Include">
               <e p="Data.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -26,7 +26,7 @@
         <e p="GameEngine.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp2.2" t="Include">
+            <e p="netstandard2.0" t="Include">
               <e p="Engine.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
