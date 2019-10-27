@@ -18,11 +18,57 @@ namespace Engine
 
     public void GameInit()
         {
-            Room forest = new Room() { Name = "Forest", Description = "You are in a Forest! You know nothing about the Forest John! \nChoose your path." };
-            Room chamber = new Room() { Name = "Chamber", Description = "You are in a black chamber!\nYou are better off returning back to the forest I guess..." };
+            Room forest = new Room()
+            {
+                Name = "Forest",
+                Description = "You are in a Forest! You know nothing about the Forest John! \nChoose your path. There's one leading to a nearby town and one leading into the deep forest'"
+            };
+            Room deepForest = new Room()
+            {
+                Name = "Deep forest",
+                Description = "It's so dark you can barely see....Ouch! What the hell was that?!\nA deadly spider has bitten you, you can't feel your legs. Guess you are not going anywhere now :/"
+            };
+            Room town = new Room()
+            {
+                Name = "Town",
+                Description = "You are entering the local town of Ooobelyboo.\nJolly folk from local tavern runs around a sings silly drunken songs. You can hear clinking of the blacksmith's hammer."
+            };
+            Room tavern = new Room()
+            {
+                Name = "Tavern",
+                Description = "So nice to see a nice tavern like this! I guess you know what taverns are for ;) Have a look around."
+            };
+            Room bar = new Room()
+            {
+                Name = "Bar",
+                Description = "Oh oh! No money, no beer fellow!"
+            };
+            Room chamber = new Room()
+            {
+                Name = "Chamber",
+                Description = "You are in a black chamber!\nYou are better off returning back to the tavern I guess..."
+            };
+            Room blacksmiths = new Room()
+            {
+                Name = "Blacksmith's workshop'",
+                Description = "A fine sword takes shape in the blacksmith's skillful hands. Too bad you have no money to buy it."
+            };
             
-            chamber.RoomsAround.Add(forest);
-            forest.RoomsAround.Add(chamber);
+            forest.RoomsAround.Add(town);
+            forest.RoomsAround.Add(deepForest);
+            
+            town.RoomsAround.Add(tavern);
+            town.RoomsAround.Add(blacksmiths);
+            town.RoomsAround.Add(forest);
+            
+            tavern.RoomsAround.Add(chamber);
+            tavern.RoomsAround.Add(bar);
+            tavern.RoomsAround.Add(town);
+
+            bar.RoomsAround.Add(tavern);
+            chamber.RoomsAround.Add(tavern);
+            
+            blacksmiths.RoomsAround.Add(town);
             
             CurrentRoom = forest;
         }
