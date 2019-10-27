@@ -11,7 +11,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="10,10,-2,0" TextWrapping="Wrap" Text="{Binding CurrentStatus, Mode=OneWay}" VerticalAlignment="Top" Height="201" Width="464"/>
         </GroupBox>
         <GroupBox Header="Rooms around you" HorizontalAlignment="Left" Height="156" Margin="10,253,0,0" VerticalAlignment="Top" Width="484">
-            <ListBox ItemsSource="{Binding AdjacentRooms}" HorizontalContentAlignment="Stretch" Height="118" Margin="10,10,6,0" VerticalAlignment="Top" ButtonBase.Click="RoomGoButton_Click">
+            <ListBox ItemsSource="{Binding AdjacentRooms}" HorizontalContentAlignment="Stretch" Height="118" Margin="10,10,6,0" VerticalAlignment="Top" SelectedItem="{Binding SelectedRoom}" ButtonBase.Click="RoomGoButton_Click">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,2">

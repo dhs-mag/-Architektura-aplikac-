@@ -42,12 +42,10 @@ namespace Frontend
 
         private void RoomGoButton_Click(object sender, RoutedEventArgs e)
         {
-            if (((ListBox) e.Source).SelectedItem is Room selectedRoom)
-            {
-                GameEngine.MoveTo(selectedRoom);
-                ViewModel.UpdateFromGameEngine(GameEngine);
-            }
-
+            if (ViewModel.SelectedRoom == null) return;
+            
+            GameEngine.MoveTo(ViewModel.SelectedRoom);
+            ViewModel.UpdateFromGameEngine(GameEngine);
         }
     }
 }

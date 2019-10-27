@@ -15,6 +15,8 @@ namespace Frontend.ViewModels
             get => _currentStatus;
             private set { _currentStatus = value; OnPropertyChanged(); }
         }
+        
+        public Room SelectedRoom { get; set; }
 
         public ObservableCollection<Room> AdjacentRooms { get; }
 
