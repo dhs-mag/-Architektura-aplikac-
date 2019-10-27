@@ -1,0 +1,85 @@
+D:\Repository\WPD_basics\WPD_basics\bin\Debug\WPF_basics.exe.config
+D:\Repository\WPD_basics\WPD_basics\bin\Debug\WPF_basics.exe
+D:\Repository\WPD_basics\WPD_basics\bin\Debug\WPF_basics.pdb
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.csprojResolveAssemblyReference.cache
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\MainWindow.g.cs
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\ElementBinding.g.cs
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\SimpleDataContext.g.cs
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\ViewModelBinding.g.cs
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\App.g.cs
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics_MarkupCompile.cache
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics_MarkupCompile.lref
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\MainWindow.baml
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\ElementBinding.baml
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\SimpleDataContext.baml
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\Windows\ViewModelBinding.baml
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.g.resources
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.Properties.Resources.resources
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.csproj.GenerateResource.Cache
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.exe
+D:\Repository\WPD_basics\WPD_basics\obj\Debug\WPF_basics.pdb
+D:\Repository\WPD_basics\WPF_basics\bin\Debug\WPF_basics.exe.config
+D:\Repository\WPD_basics\WPF_basics\bin\Debug\WPF_basics.exe
+D:\Repository\WPD_basics\WPF_basics\bin\Debug\WPF_basics.pdb
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.csprojResolveAssemblyReference.cache
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\MainWindow.g.cs
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\ElementBinding.g.cs
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.g.cs
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.g.cs
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\App.g.cs
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.cache
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.lref
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\MainWindow.baml
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\ElementBinding.baml
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.baml
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.baml
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.g.resources
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.Properties.Resources.resources
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.csproj.GenerateResource.Cache
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.exe
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\WPF_basics.pdb
+D:\Repository\WPD_basics\WPF_basics\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\bin\Debug\WPF_basics.exe.config
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\bin\Debug\WPF_basics.exe
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\bin\Debug\WPF_basics.pdb
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csprojResolveAssemblyReference.cache
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\MainWindow.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\ElementBinding.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\App.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.cache
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.lref
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\MainWindow.baml
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\ElementBinding.baml
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.baml
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.baml
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.g.resources
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.Properties.Resources.resources
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csproj.GenerateResource.Cache
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csproj.CoreCompileInputs.cache
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.exe
+D:\JČU\Pokročilé DB\WPF_basics\WPF_basics\obj\Debug\WPF_basics.pdb
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\bin\Debug\WPF_basics.exe.config
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\bin\Debug\WPF_basics.exe
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\bin\Debug\WPF_basics.pdb
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csprojAssemblyReference.cache
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\MainWindow.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\ElementBinding.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\App.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.cache
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics_MarkupCompile.lref
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\MainWindow.baml
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\ElementBinding.baml
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\SimpleDataContext.baml
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\Windows\ViewModelBinding.baml
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.g.resources
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.Properties.Resources.resources
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csproj.GenerateResource.cache
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.csproj.CoreCompileInputs.cache
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.exe
+C:\Users\Drml\Data\JCU\Studinjní materiály\Mgr. Semestr 3\Architektura aplikací\Cvičení\WPF_basics\WPF_basics\obj\Debug\WPF_basics.pdb
