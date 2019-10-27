@@ -7,8 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="249,61,0,0" TextWrapping="Wrap" Text="{Binding StateDescription, Mode=OneWay}" VerticalAlignment="Top" Height="113" Width="266">
+        <TextBlock HorizontalAlignment="Left" Margin="249,61,0,0" TextWrapping="Wrap" Text="{Binding CurrentStatus, Mode=OneWay}" VerticalAlignment="Top" Height="113" Width="266">
         </TextBlock>
+        <ListBox ItemsSource="{Binding Path=AdjacentRooms}" HorizontalContentAlignment="Stretch" Height="100" Margin="275,259,0,0" VerticalAlignment="Top" Width="262" Button.Click="RoomGoButton_Click">
+            <ListBox.ItemTemplate>
+            <DataTemplate>
+                <Grid Margin="0,2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Name}" />
+                    <Button Grid.Column="1" Content="Go" >
+                        <!-- For button binding and selection enforcement see: https://stackoverflow.com/a/24045982 -->
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}, Path=IsSelected}" Value="True">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Setter Property="ClickMode" Value="Press"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Grid>
+            </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
 
     </Grid>
 </Window>

@@ -12,7 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Data;
 using Engine;
+using Frontend.ViewModels;
 
 namespace Frontend
 {
@@ -24,16 +26,28 @@ namespace Frontend
 
         private readonly GameEngine GameEngine;
 
+        private readonly MainWindowVm ViewModel;
+
         public MainWindow()
         {
-            this.GameEngine = new GameEngine();
-
-            DataContext = GameEngine;
+            GameEngine = new GameEngine();
             GameEngine.GameInit();
+            
+
+            ViewModel = new MainWindowVm(GameEngine);
+            DataContext = ViewModel;
             
             InitializeComponent();
         }
-        
-        
+
+        private void RoomGoButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (((ListBox) e.Source).SelectedItem is Room selectedRoom)
+            {
+                GameEngine.MoveTo(selectedRoom);
+                ViewModel.UpdateFromGameEngine(GameEngine);
+            }
+
+        }
     }
 }
