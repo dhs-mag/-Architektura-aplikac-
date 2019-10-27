@@ -5,17 +5,13 @@ namespace Game
 {
     class Program
     {
-        public static KQEngine Engine { get; set; }
+        private static GameEngine Engine { get; set; }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-
-            Engine = new KQEngine();
+            Engine = new GameEngine();
             Engine.GameInit();
             Engine.Update();
-
-
 
             Console.ReadKey();
         }

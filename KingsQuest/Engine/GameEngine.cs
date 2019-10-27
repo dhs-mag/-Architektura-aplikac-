@@ -4,20 +4,19 @@ using System.Linq;
 
 namespace Engine
 {
-    public class KQEngine
+    public class GameEngine
     {
-        private Room currentRoom;
+        private Room CurrentRoom;
 
-        public void PrintState()
+        private void PrintState()
         {
-            //Console.WriteLine("You are in a Forest! You know nothing about the Forest John!");
-            Console.WriteLine(currentRoom.Description);
-            if (currentRoom.RoomsAround.Any())
+            Console.WriteLine(CurrentRoom.Description);
+            if (CurrentRoom.RoomsAround.Any())
             {
                 Console.WriteLine("\nAround you are:");
-                for (var index = 0; index < currentRoom.RoomsAround.Count; index++)
+                for (var index = 0; index < CurrentRoom.RoomsAround.Count; index++)
                 {
-                    var room = currentRoom.RoomsAround[index];
+                    var room = CurrentRoom.RoomsAround[index];
                     Console.WriteLine("{0}) {1}", index + 1, room.Name);
                 }
 
@@ -33,9 +32,11 @@ namespace Engine
         {
             Room forest = new Room() { Name = "Forest", Description = "You are in a Forest! You know nothing about the Forest John!" };
             Room chamber = new Room() { Name = "Chamber", Description = "You are in a black chamber!" };
+            
             chamber.RoomsAround.Add(forest);
             forest.RoomsAround.Add(chamber);
-            currentRoom = forest;
+            
+            CurrentRoom = forest;
         }
 
         public void Update()
@@ -43,26 +44,29 @@ namespace Engine
             var quit = false;
             while (!quit)
             {
-                //Console.Clear();
                 PrintState();
+                
                 var input = Console.ReadLine();
+                if (input == null)
+                    continue;
 
                 if (int.TryParse(input, out var number))
                 {
-                    if (number < 1 || number > currentRoom.RoomsAround.Count)
+                    if (number < 1 || number > CurrentRoom.RoomsAround.Count)
                     {
                         Console.WriteLine("There's no such room, try again.\n");
                         continue;
                     } 
-                    var nextRoom = currentRoom.RoomsAround[number - 1];
-                    currentRoom = nextRoom;
+                    var nextRoom = CurrentRoom.RoomsAround[number - 1];
+                    CurrentRoom = nextRoom;
                     continue;
                 }
                 
                 
                 switch(input.ToLower())
                 {
-                    case "exit": quit = true;
+                    case "exit":
+                        quit = true;
                         break;
                     default: Console.WriteLine($"You wrote: {input}");
                         break;
