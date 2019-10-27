@@ -1,32 +1,18 @@
 ﻿using Data;
-using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Engine
 {
     public class GameEngine
     {
-        private Room CurrentRoom;
+        public Room CurrentRoom { get; private set; }
 
-        private void PrintState()
-        {
-            Console.WriteLine(CurrentRoom.Description);
-            if (CurrentRoom.RoomsAround.Any())
-            {
-                Console.WriteLine("\nAround you are:");
-                for (var index = 0; index < CurrentRoom.RoomsAround.Count; index++)
-                {
-                    var room = CurrentRoom.RoomsAround[index];
-                    Console.WriteLine("{0}) {1}", index + 1, room.Name);
-                }
-
-                Console.WriteLine("\nType number to move.");
-            }
-            else
-            {
-                Console.WriteLine("\nThere is nothing around you.");
-            }
-        }
+        /// <summary>
+        /// List o adjacent rooms available for legal moves
+        /// </summary>
+        public List<Room> AdjacentRooms => CurrentRoom.RoomsAround;
 
         public void GameInit()
         {
@@ -39,39 +25,44 @@ namespace Engine
             CurrentRoom = forest;
         }
 
-        public void Update()
+        /// <summary>
+        /// Move to another room within the map bounds.
+        /// </summary>
+        /// <param name="room">Destination room</param>
+        /// <returns>TRUE on successful move, FALSE in case of the intended move is invalid</returns>
+        public bool MoveTo(Room room)
         {
-            var quit = false;
-            while (!quit)
-            {
-                PrintState();
-                
-                var input = Console.ReadLine();
-                if (input == null)
-                    continue;
+            if (!AdjacentRooms.Contains(room)) return false;
+            
+            CurrentRoom = room;
+            return true;
+        }
 
-                if (int.TryParse(input, out var number))
+        /// <summary>
+        /// Generate textual description of the current game state.
+        /// </summary>
+        /// <returns></returns>
+        public string GetStateDescription()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(CurrentRoom.Description);
+            sb.AppendLine("\nAround you are:");
+            if (AdjacentRooms.Any())
+            {
+                for (var index = 0; index < AdjacentRooms.Count; index++)
                 {
-                    if (number < 1 || number > CurrentRoom.RoomsAround.Count)
-                    {
-                        Console.WriteLine("There's no such room, try again.\n");
-                        continue;
-                    } 
-                    var nextRoom = CurrentRoom.RoomsAround[number - 1];
-                    CurrentRoom = nextRoom;
-                    continue;
+                    var room = AdjacentRooms[index];
+                    sb.AppendLine($"{index + 1}) {room.Name}");
                 }
-                
-                
-                switch(input.ToLower())
-                {
-                    case "exit":
-                        quit = true;
-                        break;
-                    default: Console.WriteLine($"You wrote: {input}");
-                        break;
-                }
+
+                sb.AppendLine("\nChoose your path.");
             }
+            else
+            {
+                sb.AppendLine("\nThere is nothing around you.");
+            }
+
+            return sb.ToString();
         }
     }
 }
