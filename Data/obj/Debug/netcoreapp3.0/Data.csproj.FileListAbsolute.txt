@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\KingsQuest\Data\bin\Debug\netcoreapp3.0\Data.deps.json
+C:\Users\User\Desktop\KingsQuest\Data\bin\Debug\netcoreapp3.0\Data.dll
+C:\Users\User\Desktop\KingsQuest\Data\bin\Debug\netcoreapp3.0\Data.pdb
+C:\Users\User\Desktop\KingsQuest\Data\obj\Debug\netcoreapp3.0\Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\KingsQuest\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\KingsQuest\Data\obj\Debug\netcoreapp3.0\Data.AssemblyInfo.cs
+C:\Users\User\Desktop\KingsQuest\Data\obj\Debug\netcoreapp3.0\Data.dll
+C:\Users\User\Desktop\KingsQuest\Data\obj\Debug\netcoreapp3.0\Data.pdb
