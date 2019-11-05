@@ -2,14 +2,19 @@
 using Data;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics.SymbolStore;
 using System.Linq;
 using System.Text;
+using Data.Things;
+using Data.Things.Contract;
 
 namespace Engine
 {
     public class GameEngine
     {
         public Room CurrentRoom { get; private set; }
+        
+        public Player CurrentPlayer { get; private set; }
 
         /// <summary>
         /// List o adjacent rooms available for legal moves
@@ -18,6 +23,12 @@ namespace Engine
 
     public void GameInit()
         {
+            // init player
+            
+            CurrentPlayer = new Player(6);
+            
+            // init world
+            
             Room forest = new Room()
             {
                 Name = "🏞 Forest",
@@ -46,7 +57,11 @@ namespace Engine
             Room chamber = new Room()
             {
                 Name = "🚪 Chamber",
-                Description = "You are in a black chamber! 😨\n\nYou are better off returning back to the tavern I guess... 🤔"
+                Description = "You are in a black chamber! 😨\n\nYou are better off returning back to the tavern I guess... 🤔",
+                ThingsInside = new List<Thing>()
+                {
+                    new Coin("Bag of cash")
+                }
             };
             Room blacksmiths = new Room()
             {
@@ -84,6 +99,30 @@ namespace Engine
             
             CurrentRoom = room;
             return true;
+        }
+
+        public bool Pick(IPickable thing)
+        {
+            var success = CurrentPlayer.Inventory.Add(thing);
+            if (!success) return false;
+
+            return true;
+        }
+
+        public bool ActUpon<TThing>(TThing thing, Thing responder) where TThing : Thing
+        {
+            if (responder is IResponsiveTo<TThing> responsiveResponder)
+            {
+                var success = responsiveResponder.RespondTo(thing, CurrentPlayer);
+                if (!success) return false;
+
+                if (thing is IConsumable consumableActor)
+                {
+                    consumableActor.Dispose();
+                }
+            }
+
+            return false;
         }
 
         /// <summary>

@@ -14,10 +14,13 @@ namespace Data
         /// Paths
         /// </summary>
         public List<Room> RoomsAround { get; set; }
+        
+        public List<Thing> ThingsInside { get; set; }
 
         public Room()
         {
             RoomsAround = new List<Room>();
+            ThingsInside = new List<Thing>();
         }
     }
 }
