@@ -26,6 +26,7 @@ namespace Engine
             // init player
             
             CurrentPlayer = new Player(6);
+            CurrentPlayer.Inventory.Add(new Coin("A gold coin"));
             
             // init world
             

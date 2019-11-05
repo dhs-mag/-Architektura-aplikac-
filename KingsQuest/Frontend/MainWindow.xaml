@@ -6,7 +6,7 @@
         xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
         xmlns:local="clr-namespace:Frontend"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="511.925">
+        Title="MainWindow" Height="450" Width="585.356">
     <Grid>
         <GroupBox Header="Game status" HorizontalAlignment="Left" Height="238" Margin="10,10,0,0" VerticalAlignment="Top" Width="484">
             <emoji:TextBlock HorizontalAlignment="Left" Margin="10,10,-2,0" TextWrapping="Wrap" Text="{Binding CurrentStatus, Mode=OneWay}" VerticalAlignment="Top" Height="201" Width="464" FontSize="16"/>
@@ -36,6 +36,15 @@
                                 </Button.Style>
                             </Button>
                         </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Header="Inventory" HorizontalAlignment="Left" Height="399" Margin="499,10,0,0" VerticalAlignment="Top" Width="66">
+            <ListBox ItemsSource="{Binding Inventory}" HorizontalContentAlignment="Stretch" Height="374" Margin="0,0,-2,0" VerticalAlignment="Top" FontSize="18">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <emoji:TextBlock Text="{Binding EmojiRepresentation}" ToolTipService.ToolTip="{Binding Path=Name}"/>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
