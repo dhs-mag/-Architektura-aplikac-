@@ -1,31 +1,21 @@
 ﻿using Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Engine
 {
     public class KQEngine
     {
+        private readonly IUserInterface Ui;
+        
         public Room CurrentRoom { get; private set; }
 
-        public List<Item> Inventory { get; set; }
-
-        private readonly IUserInterface Ui;
+        private readonly List<Item> _inventory;
+        public IEnumerable<Item> Inventory => _inventory.ToArray();
 
         public KQEngine(IUserInterface ui)
         {
             Ui = ui;
-            Inventory = new List<Item>();
-        }
-
-        public void PrintState()
-        {
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine(CurrentRoom.Description);
-            Console.WriteLine("Around you are: " + string.Join(",", CurrentRoom.Characters.Select(c => c.Name)));
-            Console.WriteLine("You have:" + string.Join(",", Inventory.Select(i => i.Name)));
-            Console.WriteLine("You can go to:  " + string.Join(",", CurrentRoom.NRooms.Select(c => c.Name)));
+            _inventory = new List<Item>();
         }
 
         public void GameInit()
@@ -48,7 +38,7 @@ namespace Engine
             };
             king.OnItemEmmit += (sender, item) =>
             {
-                Inventory.Add(item);
+                _inventory.Add(item);
                 Ui.IndicateInventoryAddition(item);
             };
             king.OnDialogReply += (sender, message) =>
@@ -66,7 +56,11 @@ namespace Engine
 
         public void Command_GO(Room newRoom)
         {
+            var oldRoom = CurrentRoom;
+            
             if (this.CurrentRoom.NRooms.Contains(newRoom)) CurrentRoom = newRoom;
+            
+            Ui.CurrentRoomTransition(oldRoom, newRoom);
         }
 
         public void Command_TALK(Character character)
@@ -76,7 +70,7 @@ namespace Engine
 
         public void Command_Exit()
         {
-            //do something smart (save progres, etc.)
+            Ui.IndicateExit();
         }
     }
 }

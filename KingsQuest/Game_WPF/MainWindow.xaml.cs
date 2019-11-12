@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Data;
 
 namespace Game_WPF
 {
@@ -29,8 +30,27 @@ namespace Game_WPF
 
             Engine = new KQEngine(this);
             Engine.GameInit();
-            //Engine.Update();
 
+        }
+
+        public void ShowTalk(string dialogLine, Character whoIsTalking = null)
+        {
+            MessageBox.Show($"{whoIsTalking?.Name ?? "Someone"} says: {dialogLine}");
+        }
+
+        public void IndicateInventoryAddition(Item item)
+        {
+            MessageBox.Show("[" + item.Name + " was added to your inventory]");
+        }
+
+        public void CurrentRoomTransition(Room oldRoom, Room newRoom)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void IndicateExit()
+        {
+            throw new NotImplementedException();
         }
     }
 }
