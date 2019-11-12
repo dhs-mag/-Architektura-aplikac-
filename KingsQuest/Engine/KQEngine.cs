@@ -48,17 +48,12 @@ namespace Engine
             };
             king.OnItemEmmit += (sender, item) =>
             {
-                Console.WriteLine("[" + item.Name + " was added to your inventory]");
                 Inventory.Add(item);
+                Ui.IndicateInventoryAddition(item);
             };
             king.OnDialogReply += (sender, message) =>
             {
-                if (sender is Character character)
-                {
-                    Console.Write(character.Name + " says: ");
-                }
-
-                Console.WriteLine(message);
+                Ui.ShowTalk(message, sender as Character);    // results in NULL on invalid cast
             };
 
             chamber.NRooms.Add(forest);
