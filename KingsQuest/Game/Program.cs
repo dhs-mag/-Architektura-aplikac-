@@ -1,60 +1,70 @@
-﻿using Engine;
+﻿using Data;
+using Engine;
 using System;
+using System.Linq;
+using System.Runtime;
 
 namespace Game
 {
     class Program
     {
-        private static GameEngine Engine { get; set; }
+        private static KQEngine Engine { get; set; }
 
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Engine = new GameEngine();
+            var ui = new ConsoleInterface();
+            
+            Engine = new KQEngine(ui);
             Engine.GameInit();
-            
-            
+
+            Engine.PrintState();
+                
             var quit = false;
-            var doPrintDescription = true;
             while (!quit)
             {
-                if (doPrintDescription)
-                {
-                    Console.WriteLine(Engine.GetStateDescription());
-                }
+                Console.Write("> ");
+                var input = Console.ReadLine();   
                 
-                var input = Console.ReadLine();
-                if (input == null)
+                switch (input.ToLower())
                 {
-                    doPrintDescription = false;
-                    continue;
-                }
+                    case "go":
+                        
+                        Console.Write("Where to? > ");
+                        var roomNameInput = Console.ReadLine();
+                        var newRoom = Engine.CurrentRoom.NRooms.FirstOrDefault(x => x.Name.ToLower() == roomNameInput?.ToLower());
+                        if (newRoom == null)
+                        {
+                            Console.Write("I do not understand. There are: ");
+                            foreach (var room in Engine.CurrentRoom.NRooms) Console.Write($"{room.Name}");
+                            Console.WriteLine();
+                            break;
+                        }
 
-                if (int.TryParse(input, out var number))
-                {
-                    if (number < 1 || number > Engine.AdjacentRooms.Count)
-                    {
-                        Console.WriteLine("There's no such room, try again.");
-                        doPrintDescription = false;
-                        continue;
-                    } 
-                    var success = Engine.MoveTo(Engine.AdjacentRooms[number - 1]);
-                    if (!success)
-                    {
-                        Console.WriteLine("There's no such room, try again.");
-                        doPrintDescription = false;
-                        continue;
-                    }
-
-                    doPrintDescription = true;
-                    continue;
-                }
-                
-                switch(input.ToLower())
-                {
+                        Engine.Command_GO(newRoom);
+                        Engine.PrintState();
+                        break;
+                    case "talk":
+                        Console.Write("To whom? > ");
+                        var characterNameInput = Console.ReadLine();
+                        Character character = Engine.CurrentRoom.Characters.FirstOrDefault(x => x.Name.ToLower() == characterNameInput?.ToLower());
+                        
+                        if (character == null)
+                        {
+                            Console.Write("I do not understand. There are: ");
+                            foreach (var room in Engine.CurrentRoom.Characters) Console.Write($"{room.Name}");
+                            Console.WriteLine();
+                            break;
+                        }
+                        
+                        Engine.Command_TALK(character);
+                        break;
                     case "exit":
+                        Engine.Command_Exit();
+                        Console.WriteLine("Game over!");
                         quit = true;
                         break;
-                    default: Console.WriteLine($"You wrote: {input}");
+                    default:
+                        Console.WriteLine($"You wrote: {input}\n Available commands: go, talk, exit");
                         break;
                 }
             }

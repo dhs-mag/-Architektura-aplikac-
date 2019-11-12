@@ -4,23 +4,22 @@ using System.Text;
 
 namespace Data
 {
-    public class Room
+    public class Room : GameObject
     {
-        public string Name { get; set; }
-        
-        public string Description { get; set; }
-
         /// <summary>
         /// Paths
         /// </summary>
-        public List<Room> RoomsAround { get; set; }
-        
-        public List<Thing> ThingsInside { get; set; }
+        public List<Room> NRooms { get; set; }
+
+        public List<Item> Items { get; set; }
+
+        public List<Character> Characters { get; set; }
 
         public Room()
         {
-            RoomsAround = new List<Room>();
-            ThingsInside = new List<Thing>();
+            NRooms = new List<Room>();
+            Items = new List<Item>();
+            Characters = new List<Character>();
         }
     }
 }
