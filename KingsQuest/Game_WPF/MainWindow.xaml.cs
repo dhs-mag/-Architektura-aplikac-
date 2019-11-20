@@ -31,6 +31,8 @@ namespace Game_WPF
             Engine = new KQEngine(this);
             Engine.GameInit();
 
+            DataContext = Engine;
+
         }
 
         public void ShowTalk(string dialogLine, Character whoIsTalking = null)
@@ -51,6 +53,13 @@ namespace Game_WPF
         public void IndicateExit()
         {
             throw new NotImplementedException();
+        }
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var king = Engine.CurrentRoom.Characters.FirstOrDefault(c => c is King);
+            king.Talk();
+            
         }
     }
 }
