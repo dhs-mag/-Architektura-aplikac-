@@ -1,0 +1,11 @@
+C:\Temp\_2019\KingsQuest\Engine\bin\Debug\netcoreapp2.2\Engine.deps.json
+C:\Temp\_2019\KingsQuest\Engine\bin\Debug\netcoreapp2.2\Engine.dll
+C:\Temp\_2019\KingsQuest\Engine\bin\Debug\netcoreapp2.2\Engine.pdb
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.csprojResolveAssemblyReference.cache
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.csproj.CoreCompileInputs.cache
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.AssemblyInfoInputs.cache
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.AssemblyInfo.cs
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.dll
+C:\Temp\_2019\KingsQuest\Engine\obj\Debug\netcoreapp2.2\Engine.pdb
+C:\Temp\_2019\KingsQuest\Engine\bin\Debug\netcoreapp2.2\Data.dll
+C:\Temp\_2019\KingsQuest\Engine\bin\Debug\netcoreapp2.2\Data.pdb

@@ -1,0 +1,15 @@
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Game.deps.json
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Game.runtimeconfig.json
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Game.runtimeconfig.dev.json
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Game.dll
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Game.pdb
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.csprojResolveAssemblyReference.cache
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.csproj.CoreCompileInputs.cache
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.AssemblyInfoInputs.cache
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.AssemblyInfo.cs
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.dll
+C:\Temp\_2019\KingsQuest\Game\obj\Debug\netcoreapp2.2\Game.pdb
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Engine.dll
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Engine.pdb
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Data.dll
+C:\Temp\_2019\KingsQuest\Game\bin\Debug\netcoreapp2.2\Data.pdb

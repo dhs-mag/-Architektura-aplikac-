@@ -1,0 +1,6 @@
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.Resource1.resources
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.Resource1.cs.resources
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.Resource1.en.resources
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.csproj.GenerateResource.cache
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.AssemblyInfoInputs.cache
+C:\Users\papaj\Desktop\KingsQuest\Game_resources\obj\Debug\netcoreapp3.0\Game_resources.AssemblyInfo.cs
